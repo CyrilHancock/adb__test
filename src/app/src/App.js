@@ -54,8 +54,8 @@ export function App() {
       <div>
         <h1>List of TODOs</h1>
      
-        <li>Learn Docker</li>
-        <li>Learn React</li>
+        {todoList.length===0?<div><li>Learn Docker</li>
+        <li>Learn React</li></div>:<TodoList todoList={todoList}/>}
         <TodoList todoList={todoList}/>
         
       </div>
